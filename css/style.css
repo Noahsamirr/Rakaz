@@ -606,6 +606,13 @@ pre code {
   margin-left: auto;
 }
 
+@media (max-width: 991px) {
+  .container-fluid {
+    background-color: rgba(0, 0, 0, 0.2) !important;
+    z-index: 20;
+  }
+}
+
 @media (min-width: 576px) {
   .container, .container-sm {
     max-width: 540px;
@@ -6009,16 +6016,8 @@ button.bg-primary:focus {
   background-color: #d69c39 !important;
 }
 
-.z-20 {
-  z-index: 20;
-}
-
 .bg-secondary {
   background-color: #252531 !important;
-}
-
-.bg-transparent {
-  background-color: rgba(0, 0, 0, 0.2) !important;
 }
 
 a.bg-secondary:hover, a.bg-secondary:focus,

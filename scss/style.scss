@@ -96,26 +96,6 @@ h6 {
     }
 }
 
-.nav-bar::before {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 50%;
-    top: 0;
-    left: 0;
-    background: $dark;
-}
-
-.nav-bar::after {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 50%;
-    bottom: 0;
-    left: 0;
-    background: #ffffff;
-}
-
 .navbar-dark .navbar-nav .nav-link {
     padding: 30px 15px;
     letter-spacing: 1px;
@@ -139,7 +119,7 @@ h6 {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, .5);
+    background: linear-gradient(rgba($black, 0.2), ($black));
     z-index: 1;
 }
 
@@ -219,6 +199,10 @@ h6 {
     opacity: 1;
 }
 
+.bg-black {
+    background-color: #000;
+}
+
 .testimonial-carousel .owl-nav {
     position: absolute;
     width: 100%;
@@ -256,4 +240,25 @@ h6 {
     margin: 0;
     padding: 0;
     list-style-type: none;
+}
+
+.ani-right {
+    animation: moveInright 1s ease-out;
+}
+.ani-left {
+    animation: moveInleft 1s ease-out;
+}
+
+.ani-bottom {
+    animation: moveInBotton 1s ease-out .75s;
+    animation-fill-mode: backwards;
+}
+
+.vertical {
+    border-left: 3.6px solid $primary;
+    height: 200px;
+    position:absolute;
+    right: 7rem;
+    bottom: -6rem;
+    z-index: 20;
 }

@@ -1,0 +1,17 @@
+{
+  "name": "rakaz",
+  "version": "1.0.0",
+  "description": "landing page for rakaz",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "compile:sass": "node-sass scss/style.scss css/style.css -w"
+  },
+  "author": "AA",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}

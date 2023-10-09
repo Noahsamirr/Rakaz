@@ -1,9 +1,11 @@
 /******* Bootstrap Theming ********/
 
-$primary: #DFB163;
+$primary: #84664C;
 $secondary: #252531;
 $light: #F3F6FF;
 $dark: #181818;
+
+$bg-color: #101324;
 
 $theme-colors: (
     "primary": $primary,
@@ -43,6 +45,11 @@ h6 {
     font-weight: 400 !important;
 }
 
+.h-85 {
+    height: 85%;
+}
+    
+  
 .section-title {
     position: relative;
     padding-left: 60px;
@@ -119,7 +126,7 @@ h6 {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(rgba($black, 0.2), ($black));
+    background: -moz-linear-gradient(top, rgba($bg-color, 0.2), rgba($bg-color, 1));
     z-index: 1;
 }
 
@@ -200,7 +207,7 @@ h6 {
 }
 
 .bg-black {
-    background-color: #000;
+    background-color: #101324;
 }
 
 .testimonial-carousel .owl-nav {
@@ -261,4 +268,15 @@ h6 {
     right: 7rem;
     bottom: -6rem;
     z-index: 20;
+}
+
+@media (max-width: 880px) {
+    .vertical  {
+        right: 4rem;
+    }
+}
+@media (max-width: 400px) {
+    .vertical  {
+        right: 2rem;
+    }
 }

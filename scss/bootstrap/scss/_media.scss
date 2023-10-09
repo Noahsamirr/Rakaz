@@ -6,3 +6,30 @@
 .media-body {
   flex: 1;
 }
+
+.marquee {
+  position: relative;
+  width: 100vw;
+  max-width: 100%;
+  height: 3rem;
+  overflow-x: hidden;
+  color: white;
+  font-weight: bold;
+  background-color: $bg-color;
+}
+
+.track {
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 25s linear infinite;
+
+  .content {
+      text-transform: uppercase;
+  }
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}

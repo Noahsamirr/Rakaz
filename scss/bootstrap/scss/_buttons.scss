@@ -65,6 +65,7 @@ fieldset:disabled a.btn {
 @each $color, $value in $theme-colors {
   .btn-#{$color} {
     @include button-variant($value, $value);
+    border-radius: 35px;
   }
 }
 

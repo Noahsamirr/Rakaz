@@ -58,7 +58,7 @@ body {
   line-height: 1.5;
   color: #777777;
   text-align: left;
-  background-color: #fff; }
+  background-color: #101324; }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
   outline: 0 !important; }
@@ -7264,4 +7264,4 @@ h6 {
 
 @media (max-width: 400px) {
   .vertical {
-    right: 2rem; } }
+    right: 1.2rem; } }
